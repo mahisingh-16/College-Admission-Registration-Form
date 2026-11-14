@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> College Admission Registration Form </title>
+</head>
+<body>
+    <h1>College Admission Registration Form</h1>
+    <p> Please fill in the details below for admission:</p>
+    <form>
+        <!--Personal Information-->
+        <fieldset>
+            <legend>Personal Information: </legend>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required> 
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br><br>
+            <label> Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label> 
+        </fieldset>
+        <br>
+        
+        <!--Course Preference-->
+        <fieldset>
+            <legend> Course Preference: </legend>
+            <label for="course">Course Applied For:</label>
+            <select id="course" name="course" required>
+                <option value="">Select a course</option>
+                <option value="btech">B.Tech CSE</option>
+                <option value="mba">B.Tech AI/ML</option>
+                <option value="bba">BBA</option>
+                <option value="mca">BCA</option>
+            </select>
+            </fieldset>
+            <br>
+             
+        <!--Interests-->
+            <fieldset>
+                <legend> Co-curricular Interests:</legend>
+                <input type="checkbox" name="interest" value="Coding">
+                <label for ="coding"> Coding</label>
+                <br>
+                <input type="checkbox" name="interest" value="Sports">
+                <label for ="sports"> Sports</label>
+                <br>
+                <input type="checkbox" name="interest" value="Music">
+                <label for ="music"> Music</label>
+                <br>
+                <input type="checkbox" name="interest" value="Reading">
+                <label for ="reading"> Reading </label>
+            </fieldset>
+            <br>
+
+        <!--Address-->
+             <fieldset>
+                <legend>Address:</legend>
+                <label>Enter your Address:</label>
+                <br>
+                <textarea name="address" rows="5" cols="50" required></textarea>
+                </fieldset>
+                <br>
+
+        <!--Document Upload--> 
+            <fieldset>
+                <legend> Upload Documents:</legend>
+                <label> Upload Photograph:</label>
+                <input type="file" name="photo" accept="image/*" required>
+                <br><br>
+
+                <label> Upload Supporting Documents:</label>
+                <input type="file" name="documents" required>
+
+            </fieldset>   
+            <br>
+
+        <!--Declaration-->
+        <input type="checkbox" name="declaration" required>
+        <label for=" declaration">I declare that all the imformation provided are correct. </label>
+        <br><br>
+
+        <!--Button-->
+        <input type="submit" value="Submit">
+
+        <input type="reset" value="Reset">
+
+
+
+        
+            
+        </form>
+    
+</body>
+</html>
